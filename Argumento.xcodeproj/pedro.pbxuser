@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* Argumento_UNB_PASAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {797, 367}}";
+			sepNavSelRange = "{533, 0}";
+			sepNavVisRange = "{0, 533}";
+		};
+	};
+	1D3623250D0F684500981E51 /* Argumento_UNB_PASAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1144}}";
+			sepNavSelRange = "{0, 2743}";
+			sepNavVisRange = "{0, 1257}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Argumento */ = {
+		activeExec = 0;
+		executables = (
+			EB49B75D121EE29A00E3F876 /* Argumento */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* Argumento_UNB_PASViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {797, 1079}}";
+			sepNavSelRange = "{2746, 0}";
+			sepNavVisRange = "{373, 700}";
+			sepNavWindowFrame = "{{15, 256}, {919, 767}}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1643, 5824}}";
+			sepNavSelRange = "{5994, 0}";
+			sepNavVisRange = "{14931, 1104}";
+			sepNavWindowFrame = "{{15, 256}, {919, 767}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = EB49B75D121EE29A00E3F876 /* Argumento */;
+		activeSDKPreference = iphoneos4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Argumento */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Argumento */,
+		);
+		breakpoints = (
+			EB49B7E8121F6D6B00E3F876 /* Argumento_UNB_PASViewController.m:366 */,
+			EB49B7FF121F6E2B00E3F876 /* Argumento_UNB_PASViewController.m:367 */,
+			EBFCAC4E1222062D0015397A /* Argumento_UNB_PASViewController.m:429 */,
+			EBFCAC78122209A30015397A /* SingleComponentPickerViewController.m:68 */,
+			EBF1C39D1222EBFE001A2BB9 /* Argumento_UNB_PASViewController.m:124 */,
+			EBF1C3CB1222F16B001A2BB9 /* Argumento_UNB_PASViewController.m:131 */,
+			EBF1C3F21222F868001A2BB9 /* Argumento_UNB_PASViewController.m:250 */,
+			EBF1C4081222F9BE001A2BB9 /* Argumento_UNB_PASViewController.m:78 */,
+			EBF1C45A12233A46001A2BB9 /* Argumento_UNB_PASViewController.m:248 */,
+			EBD0E5711225922400D27A5D /* Argumento_UNB_PASViewController.m:245 */,
+			EBD0E595122597BE00D27A5D /* Argumento_UNB_PASViewController.m:173 */,
+			EBC39F211232A56200F5F1E1 /* Argumento_UNB_PASViewController.m:358 */,
+		);
+		codeSenseManager = EB49B774121EE2A500E3F876 /* Code sense */;
+		executables = (
+			EB49B75D121EE29A00E3F876 /* Argumento */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					663,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					619,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					731,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 323830116;
+			PBXWorkspaceStateSaveDate = 323830116;
+		};
+		perUserProjectItems = {
+			EB27F2FA12BD3E74008E1FB9 /* PBXBookmark */ = EB27F2FA12BD3E74008E1FB9 /* PBXBookmark */;
+			EB49B7DA121F6C7B00E3F876 /* PBXTextBookmark */ = EB49B7DA121F6C7B00E3F876 /* PBXTextBookmark */;
+			EB6924DE12236093009A3D59 /* PBXTextBookmark */ = EB6924DE12236093009A3D59 /* PBXTextBookmark */;
+			EBD0E54C1225825200D27A5D /* PBXTextBookmark */ = EBD0E54C1225825200D27A5D /* PBXTextBookmark */;
+			EBD16AFA134D419100655813 /* PlistBookmark */ = EBD16AFA134D419100655813 /* PlistBookmark */;
+			EBD16AFB134D419100655813 /* PBXTextBookmark */ = EBD16AFB134D419100655813 /* PBXTextBookmark */;
+			EBD16AFC134D419100655813 /* PBXTextBookmark */ = EBD16AFC134D419100655813 /* PBXTextBookmark */;
+			EBD16AFD134D419100655813 /* PBXTextBookmark */ = EBD16AFD134D419100655813 /* PBXTextBookmark */;
+			EBD16AFE134D419100655813 /* PBXTextBookmark */ = EBD16AFE134D419100655813 /* PBXTextBookmark */;
+			EBF1C46B12233E34001A2BB9 /* PBXTextBookmark */ = EBF1C46B12233E34001A2BB9 /* PBXTextBookmark */;
+			EBFA673D12BD236D00EA3262 /* PBXTextBookmark */ = EBFA673D12BD236D00EA3262 /* PBXTextBookmark */;
+			EBFA67A412BD353900EA3262 /* PBXTextBookmark */ = EBFA67A412BD353900EA3262 /* PBXTextBookmark */;
+			EBFA67A512BD353900EA3262 /* PBXBookmark */ = EBFA67A512BD353900EA3262 /* PBXBookmark */;
+		};
+		sourceControlManager = EB49B773121EE2A500E3F876 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107310486CEB800E47090 /* Argumento_UNB_PAS-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{38, 235}, {919, 767}}";
+		};
+	};
+	EB27F2FA12BD3E74008E1FB9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = EBFA679412BD341600EA3262 /* icon58.png */;
+	};
+	EB49B75D121EE29A00E3F876 /* Argumento */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+			YES,
+		);
+		argumentStrings = (
+			NSZombieEnabled,
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+			{
+				active = YES;
+				name = NSZombieEnabled;
+			},
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Argumento;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	EB49B773121EE2A500E3F876 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	EB49B774121EE2A500E3F876 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	EB49B790121F585A00E3F876 /* SingleComponentPickerViewController.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = SingleComponentPickerViewController.m;
+		path = "/Users/pedro/Documents/Objective-C/iPhone Projects/07 Pickers/Classes/SingleComponentPickerViewController.m";
+		sourceTree = "<absolute>";
+	};
+	EB49B7DA121F6C7B00E3F876 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EB49B7DB121F6C7B00E3F876 /* DependentComponentPickerViewController.m */;
+		name = "DependentComponentPickerViewController.m: 44";
+		rLen = 554;
+		rLoc = 1256;
+		rType = 0;
+		vrLen = 1094;
+		vrLoc = 1113;
+	};
+	EB49B7DB121F6C7B00E3F876 /* DependentComponentPickerViewController.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = DependentComponentPickerViewController.m;
+		path = "/Users/pedro/Documents/Objective-C/iPhone Projects/07 Pickers/Classes/DependentComponentPickerViewController.m";
+		sourceTree = "<absolute>";
+	};
+	EB49B7E8121F6D6B00E3F876 /* Argumento_UNB_PASViewController.m:366 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-viewDidLoad";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 366;
+		location = "Argumento UNB:PAS";
+		modificationTime = 321374672.634926;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EB49B7FF121F6E2B00E3F876 /* Argumento_UNB_PASViewController.m:367 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-viewDidLoad";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 367;
+		location = "Argumento UNB:PAS";
+		modificationTime = 321374672.634963;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EB49B82A121F793100E3F876 /* cursos_2007.xml */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {859, 6825}}";
+			sepNavSelRange = "{10036, 0}";
+			sepNavVisRange = "{0, 769}";
+		};
+	};
+	EB4C2F29122217A200C5957B /* medias_2007.xml */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {949, 624}}";
+			sepNavSelRange = "{305, 0}";
+			sepNavVisRange = "{0, 823}";
+		};
+	};
+	EB6924DE12236093009A3D59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EBD392EB1220C26A00E07826 /* Constantes.h */;
+		name = "Constantes.h: 8";
+		rLen = 0;
+		rLoc = 151;
+		rType = 0;
+		vrLen = 151;
+		vrLoc = 0;
+	};
+	EBC39F211232A56200F5F1E1 /* Argumento_UNB_PASViewController.m:358 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-viewDidLoad";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 358;
+		modificationTime = 321374672.6351939;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EBD0E54C1225825200D27A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EB4C2F29122217A200C5957B /* medias_2007.xml */;
+		name = "medias_2007.xml: 14";
+		rLen = 0;
+		rLoc = 305;
+		rType = 0;
+		vrLen = 823;
+		vrLoc = 0;
+	};
+	EBD0E5711225922400D27A5D /* Argumento_UNB_PASViewController.m:245 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-iniciarCalculoArgumento";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 245;
+		location = Argumento;
+		modificationTime = 321374672.635146;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EBD0E595122597BE00D27A5D /* Argumento_UNB_PASViewController.m:173 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-iniciarCalculoArgumento";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 173;
+		location = Argumento;
+		modificationTime = 321374672.635169;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EBD16AFA134D419100655813 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Argumento_UNB_PAS-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/pedro/Documents/Objective-C/Argumento UNB:PAS/Argumento_UNB_PAS-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	EBD16AFB134D419100655813 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* Argumento_UNB_PASAppDelegate.h */;
+		name = "Argumento_UNB_PASAppDelegate.h: 23";
+		rLen = 0;
+		rLoc = 533;
+		rType = 0;
+		vrLen = 533;
+		vrLoc = 0;
+	};
+	EBD16AFC134D419100655813 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* Argumento_UNB_PASViewController.h */;
+		name = "Argumento_UNB_PASViewController.h: 76";
+		rLen = 0;
+		rLoc = 2746;
+		rType = 0;
+		vrLen = 700;
+		vrLoc = 373;
+	};
+	EBD16AFD134D419100655813 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		name = "Argumento_UNB_PASViewController.m: 321";
+		rLen = 0;
+		rLoc = 11996;
+		rType = 0;
+		vrLen = 960;
+		vrLoc = 5739;
+	};
+	EBD16AFE134D419100655813 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		name = "Argumento_UNB_PASViewController.m: 152";
+		rLen = 0;
+		rLoc = 5994;
+		rType = 0;
+		vrLen = 1104;
+		vrLoc = 14931;
+	};
+	EBD392EB1220C26A00E07826 /* Constantes.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {953, 367}}";
+			sepNavSelRange = "{151, 0}";
+			sepNavVisRange = "{0, 151}";
+		};
+	};
+	EBF1C39D1222EBFE001A2BB9 /* Argumento_UNB_PASViewController.m:124 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-iniciarCalculoArgumento";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 124;
+		location = "Argumento UNB:PAS";
+		modificationTime = 321374672.635026;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EBF1C3CB1222F16B001A2BB9 /* Argumento_UNB_PASViewController.m:131 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-iniciarCalculoArgumento";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 131;
+		location = "Argumento UNB:PAS";
+		modificationTime = 321374672.635047;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EBF1C3F21222F868001A2BB9 /* Argumento_UNB_PASViewController.m:250 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-iniciarCalculoArgumento";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 250;
+		location = "Argumento UNB:PAS";
+		modificationTime = 321374672.6350719;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EBF1C4081222F9BE001A2BB9 /* Argumento_UNB_PASViewController.m:78 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-iniciarCalculoArgumento";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 78;
+		location = "Argumento UNB:PAS";
+		modificationTime = 321374672.635099;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EBF1C45A12233A46001A2BB9 /* Argumento_UNB_PASViewController.m:248 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-iniciarCalculoArgumento";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 248;
+		location = "Argumento UNB:PAS";
+		modificationTime = 321374672.6351219;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EBF1C46B12233E34001A2BB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EBF1C46C12233E34001A2BB9 /* Control_FunViewController.m */;
+		name = "Control_FunViewController.m: 71";
+		rLen = 364;
+		rLoc = 2232;
+		rType = 0;
+		vrLen = 1249;
+		vrLoc = 1709;
+	};
+	EBF1C46C12233E34001A2BB9 /* Control_FunViewController.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = Control_FunViewController.m;
+		path = "/Users/pedro/Documents/Objective-C/iPhone Projects/04 Control Fun/Classes/Control_FunViewController.m";
+		sourceTree = "<absolute>";
+	};
+	EBFA673D12BD236D00EA3262 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Argumento_UNB_PASAppDelegate.m */;
+		name = "Argumento_UNB_PASAppDelegate.m: 1";
+		rLen = 2743;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1257;
+		vrLoc = 0;
+	};
+	EBFA67A412BD353900EA3262 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EB49B82A121F793100E3F876 /* cursos_2007.xml */;
+		name = "cursos_2007.xml: 518";
+		rLen = 0;
+		rLoc = 10036;
+		rType = 0;
+		vrLen = 769;
+		vrLoc = 0;
+	};
+	EBFA67A512BD353900EA3262 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = EBF1C4BC122354C7001A2BB9 /* icon57.png */;
+	};
+	EBFCAC4E1222062D0015397A /* Argumento_UNB_PASViewController.m:429 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Argumento_UNB_PASViewController.m */;
+		functionName = "-pickerView:titleForRow:forComponent:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 429;
+		modificationTime = 321374672.634986;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	EBFCAC78122209A30015397A /* SingleComponentPickerViewController.m:68 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = EB49B790121F585A00E3F876 /* SingleComponentPickerViewController.m */;
+		functionName = "-pickerView:titleForRow:forComponent:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 68;
+		modificationTime = 321374672.63501;
+		originalNumberOfMultipleMatches = 1;
+		state = 0;
+	};
+}
