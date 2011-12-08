@@ -102,7 +102,7 @@
 	double media21, media22, desvio21, desvio22;
 	double media31, media32, desvio31, desvio32;
     
-    double prop1 = 1.0, prop2 = 1.0, prop3 = 1.0, propFinal = 1.0;
+    double prop1 = 1.0, prop2 = 1.0, prop3 = 1.0;
     
     if (!labelPrimeiraSerie.hidden) {
 		level = 1;
@@ -132,7 +132,6 @@
         prop1 = ([[arrayA objectAtIndex:10] doubleValue] / [[arrayB objectAtIndex:0] doubleValue]);
         prop2 = (3.0 - prop1) / 2.0;
         prop3 = prop2;
-        propFinal = prop3;
         [arrayA release];
         [arrayB release];
     }
@@ -146,7 +145,6 @@
         prop1 = ([[arrayA1 objectAtIndex:10] doubleValue] / [[arrayB1 objectAtIndex:0] doubleValue]);
         prop2 = ([[arrayA2 objectAtIndex:10] doubleValue] / [[arrayB2 objectAtIndex:0] doubleValue]);
         prop3 = 3.0 - prop1 - prop2;
-        propFinal = prop3;
         [arrayA1 release];
         [arrayA2 release];
         [arrayB1 release];
@@ -399,7 +397,7 @@
     }
     
     // Carrega os argumentos dos cursos a partir do xml
-	NSString * plistPath = [bundle pathForResource:[[NSString alloc] initWithFormat:@"cursos_%d", ano] ofType:@"xml"];
+	NSString * plistPath = [bundle pathForResource:[NSString stringWithFormat:@"cursos_%d", ano] ofType:@"xml"];
 	NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
 	self.dicionarioCursos = dictionary;
 	[dictionary release];
@@ -410,7 +408,7 @@
 	self.cursos = sorted;
     
     // Carrega as médias a partir do xml
-	NSString * plistPath2 = [bundle pathForResource:[[NSString alloc] initWithFormat:@"medias_%d", ano] ofType:@"xml"];
+	NSString * plistPath2 = [bundle pathForResource:[NSString stringWithFormat:@"medias_%d", ano] ofType:@"xml"];
 	NSDictionary * dictionary2 = [[NSDictionary alloc] initWithContentsOfFile:plistPath2];
 	self.dicionarioMedias = dictionary2;
 	[dictionary2 release];
