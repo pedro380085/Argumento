@@ -19,6 +19,7 @@
 			<array>
 				<string>2007</string>
 				<string>2008</string>
+				<string>2009</string>
 			</array>
 			<key>Type</key>
 			<string>PSMultiValueSpecifier</string>
@@ -26,6 +27,7 @@
 			<array>
 				<string>2007</string>
 				<string>2008</string>
+				<string>2009</string>
 			</array>
 			<key>DefaultValue</key>
 			<string>2007</string>

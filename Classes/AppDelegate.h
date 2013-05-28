@@ -1,5 +1,5 @@
 //
-//  ArgumentoAppDelegate.h
+//  AppDelegate.h
 //  Argumento UNB:PAS
 //
 //  Created by Pedro Peçanha Martins Góes on 20/08/10.
@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NUIAppearance.h"
 
 @class ArgumentoViewController;
 
-@interface ArgumentoAppDelegate : NSObject <UIApplicationDelegate> {
+@interface AppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     ArgumentoViewController *viewController;
 }

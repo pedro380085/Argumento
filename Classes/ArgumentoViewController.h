@@ -43,12 +43,12 @@
     NSInteger telaSelecionada;
 }
 
-@property (nonatomic, retain) NSArray * cursos;
-@property (nonatomic, retain) NSArray * argumentos;
-@property (nonatomic, retain) NSDictionary * dicionarioCursos;
-@property (nonatomic, retain) NSDictionary * dicionarioMedias;
+@property (nonatomic, retain) NSArray *cursos;
+@property (nonatomic, retain) NSArray *argumentos;
+@property (nonatomic, retain) NSDictionary *dicionarioCursos;
+@property (nonatomic, retain) NSDictionary *dicionarioMedias;
+@property (nonatomic, retain) NSNumberFormatter *formatter;
 @property (nonatomic, assign) NSInteger telaSelecionada;
-@property (nonatomic, retain) NSNumberFormatter * formatter;
 
 - (IBAction) proximaPagina;
 - (IBAction) retornar;

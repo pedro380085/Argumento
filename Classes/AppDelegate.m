@@ -1,15 +1,15 @@
 //
-//  ArgumentoAppDelegate.m
+//  AppDelegate.m
 //  Argumento UNB:PAS
 //
 //  Created by Pedro Peçanha Martins Góes on 20/08/10.
 //  Copyright PEDROGOES.INFO 2011. All rights reserved.
 //
 
-#import "ArgumentoAppDelegate.h"
+#import "AppDelegate.h"
 #import "ArgumentoViewController.h"
 
-@implementation ArgumentoAppDelegate
+@implementation AppDelegate
 
 @synthesize window;
 @synthesize viewController;
@@ -18,9 +18,9 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{    
+    [NUIAppearance init];
 
     // Add the view controller's view to the window and display.
     [window addSubview:viewController.view];

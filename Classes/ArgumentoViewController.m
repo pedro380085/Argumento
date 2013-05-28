@@ -11,7 +11,59 @@
 
 @implementation ArgumentoViewController
 
-@synthesize cursos, argumentos, dicionarioCursos, dicionarioMedias, telaSelecionada, formatter;
+#pragma mark - Cycle
+
+- (void)viewDidLoad {
+	
+	[self.view insertSubview:primeiraTela atIndex:0];
+    self.telaSelecionada = 1;
+    
+    // Inicia o formatter (para formatar os números)
+    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+	[f setFormatterBehavior:NSNumberFormatterBehavior10_4];
+	[f setNumberStyle:NSNumberFormatterDecimalStyle];
+	[f setMaximumFractionDigits:2];
+    self.formatter = f;
+    [f release];
+    
+    // Metódo para atualizar os dados (em decorrência de uma possível troca do ano base nos Ajustes
+    [self atualizarDados];
+    
+	linguaPrimeiraSerie.momentary = NO;
+	linguaSegundaSerie.momentary = NO;
+	linguaTerceiraSerie.momentary = NO;
+	
+    [super viewDidLoad];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    // Metódo para atualizar os dados (em decorrência de uma possível troca do ano base nos Ajustes
+    [self atualizarDados];
+    [super viewDidAppear:animated];
+}
+
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
+}
+
+- (void)viewDidUnload {
+    // Não posso tratar os objetos como nulos pois ainda os usarei mesmo quando umas das views estiver invisível
+}
+
+
+- (void)dealloc {
+    [self.cursos release];
+    [self.argumentos release];
+    [self.dicionarioCursos release];
+    [self.dicionarioMedias release];
+    [self.formatter release];
+    [super dealloc];
+}
+
+#pragma mark - User Methods
 
 - (IBAction) proximaPagina {
 	[primeiraTela removeFromSuperview];
@@ -24,9 +76,9 @@
 	[animation setSubtype:kCATransitionFromRight];
 	[animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
 	
-	[[self.view layer] addAnimation:animation forKey:@"TrocaParaView2"];
+	[[self.view layer] addAnimation:animation forKey:@"View2"];
     
-    telaSelecionada = 2;
+    self.telaSelecionada = 2;
 }
 
 - (IBAction) retornar {
@@ -40,9 +92,9 @@
 	[animation setSubtype:kCATransitionFromLeft];
 	[animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
 	
-	[[self.view layer] addAnimation:animation forKey:@"TrocaParaView1"];
+	[[self.view layer] addAnimation:animation forKey:@"View1"];
     
-    telaSelecionada = 1;
+    self.telaSelecionada = 1;
 }
 
 - (IBAction) serieSelecionada {
@@ -293,8 +345,8 @@
 		//double xMaximoFinal = ((xMaximo0 + xMaximo1 + xMaximo2) / (3.0 - level)) * propFinal;
 		
 		
-		argumentoMinimoFinal.text = [formatter stringFromNumber:[NSNumber numberWithDouble:xMinimoFinal]];
-		argumentoMaximoFinal.text = [formatter stringFromNumber:[NSNumber numberWithDouble:xMaximoFinal]];
+		argumentoMinimoFinal.text = [self.formatter stringFromNumber:[NSNumber numberWithDouble:xMinimoFinal]];
+		argumentoMaximoFinal.text = [self.formatter stringFromNumber:[NSNumber numberWithDouble:xMaximoFinal]];
 		
 	}
 	
@@ -304,7 +356,7 @@
 	
 	UIAlertView *alert = [[UIAlertView alloc] 
 						  initWithTitle:@"Sobre" 
-						  message: @"Este programa SIMULA os resultados do PAS.\n\nDesenvolvedor: Pedro P. M. Góes\n\nVersão atual: 1.4\nRelease: Maio/2011\n"
+						  message: @"Este programa SIMULA os resultados do PAS.\n\n © Estúdio Trilha\n\nVersão atual: 1.5\nRelease: Maio/2013\n"
 						  delegate:self 
 						  cancelButtonTitle:@"Ok" 
 						  otherButtonTitles:nil];
@@ -419,59 +471,7 @@
 	[picker.delegate pickerView:picker didSelectRow:0 inComponent:0];
 }
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-	
-	[self.view insertSubview:primeiraTela atIndex:0];
-    self.telaSelecionada = 1;
-    
-    // Inicia o formatter (para formatar os números)
-    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-	[f setFormatterBehavior:NSNumberFormatterBehavior10_4];
-	[f setNumberStyle:NSNumberFormatterDecimalStyle];
-	[f setMaximumFractionDigits:2];
-    self.formatter = f;
-    [f release];
-    
-    // Metódo para atualizar os dados (em decorrência de uma possível troca do ano base nos Ajustes
-    [self atualizarDados];
-
-	linguaPrimeiraSerie.momentary = NO;
-	linguaSegundaSerie.momentary = NO;
-	linguaTerceiraSerie.momentary = NO;
-	
-    [super viewDidLoad];
-}
-
-- (void) viewDidAppear:(BOOL)animated {
-    // Metódo para atualizar os dados (em decorrência de uma possível troca do ano base nos Ajustes
-    [self atualizarDados];
-    [super viewDidAppear:animated];
-}
-
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload {
-    // Não posso tratar os objetos como nulos pois ainda os usarei mesmo quando umas das views estiver invisível
-}
-
-
-- (void)dealloc {
-    [cursos release];
-    [argumentos release];
-    [dicionarioCursos release];
-    [dicionarioMedias release];
-    [formatter release];
-    [super dealloc];
-}
-
-#pragma mark -
-#pragma mark Picker Data Source Methods
+#pragma mark - Picker Data Source Methods
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
 	return 1;
@@ -481,7 +481,7 @@
 	return [cursos count];
 }
 
-#pragma mark Picker Delegate Methods
+#pragma mark - Picker Delegate Methods
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
 	return [cursos objectAtIndex:row];
@@ -497,9 +497,9 @@
 	
     if (telaSelecionada == 1) {
         // Escreve os valores dos argumentos e relação candidato/vaga na tela
-        argumentoMinimoCurso.text = [formatter stringFromNumber:[self.argumentos objectAtIndex:0]];
-        argumentoMaximoCurso.text = [formatter stringFromNumber:[self.argumentos objectAtIndex:1]];
-        candidatoVaga.text = [formatter stringFromNumber:[self.argumentos objectAtIndex:2]];
+        argumentoMinimoCurso.text = [self.formatter stringFromNumber:[self.argumentos objectAtIndex:0]];
+        argumentoMaximoCurso.text = [self.formatter stringFromNumber:[self.argumentos objectAtIndex:1]];
+        candidatoVaga.text = [self.formatter stringFromNumber:[self.argumentos objectAtIndex:2]];
     }
 }
 
