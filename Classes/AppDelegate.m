@@ -7,25 +7,27 @@
 //
 
 #import "AppDelegate.h"
-#import "ArgumentoViewController.h"
+#import "CoursesViewController.h"
 
 @implementation AppDelegate
 
-@synthesize window;
-@synthesize viewController;
-
-
-#pragma mark -
-#pragma mark Application lifecycle
+#pragma mark - Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    
     [NUIAppearance init];
-
-    // Add the view controller's view to the window and display.
-    [window addSubview:viewController.view];
-    [window makeKeyAndVisible];
-
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.coursesViewController = [[CoursesViewController alloc] initWithNibName:@"CoursesViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.coursesViewController];
+    
+    // Set the default controller
+    self.window.rootViewController = navigationController;
+    
+    // Display it
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -57,7 +59,7 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
-    [viewController atualizarDados];
+    [self.coursesViewController atualizarDados];
 }
 
 
@@ -67,23 +69,5 @@
      See also applicationDidEnterBackground:.
      */
 }
-
-
-#pragma mark -
-#pragma mark Memory management
-
-- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
-    /*
-     Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
-     */
-}
-
-
-- (void)dealloc {
-    [viewController release];
-    [window release];
-    [super dealloc];
-}
-
 
 @end

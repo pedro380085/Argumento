@@ -9,15 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "NUIAppearance.h"
 
-@class ArgumentoViewController;
+@class CoursesViewController;
 
-@interface AppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-    ArgumentoViewController *viewController;
-}
+@interface AppDelegate : NSObject <UIApplicationDelegate>
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet ArgumentoViewController *viewController;
+@property (nonatomic, retain) IBOutlet CoursesViewController *coursesViewController;
 
 @end
 

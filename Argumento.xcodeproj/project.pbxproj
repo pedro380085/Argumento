@@ -11,15 +11,12 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		28D7ACF80DDB3853001CB0EB /* ArgumentoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* ArgumentoViewController.m */; };
+		28D7ACF80DDB3853001CB0EB /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* CoursesViewController.m */; };
 		EB7CA1FA1387F40B008396E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7CA1F91387F40B008396E3 /* QuartzCore.framework */; };
 		EBCF56DB17546B770083837B /* cursos_2007.xml in Resources */ = {isa = PBXBuildFile; fileRef = EBCF56D717546B770083837B /* cursos_2007.xml */; };
 		EBCF56DC17546B770083837B /* cursos_2008.xml in Resources */ = {isa = PBXBuildFile; fileRef = EBCF56D817546B770083837B /* cursos_2008.xml */; };
 		EBCF56DD17546B770083837B /* medias_2007.xml in Resources */ = {isa = PBXBuildFile; fileRef = EBCF56D917546B770083837B /* medias_2007.xml */; };
 		EBCF56DE17546B770083837B /* medias_2008.xml in Resources */ = {isa = PBXBuildFile; fileRef = EBCF56DA17546B770083837B /* medias_2008.xml */; };
-		EBCF56E317546B930083837B /* ArgumentoViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCF56E017546B930083837B /* ArgumentoViewController~ipad.xib */; };
-		EBCF56E417546B930083837B /* iPadWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCF56E117546B930083837B /* iPadWindow.xib */; };
-		EBCF56E517546B930083837B /* iPhoneWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCF56E217546B930083837B /* iPhoneWindow.xib */; };
 		EBCF575317546C030083837B /* NUIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCF56ED17546C030083837B /* NUIAppearance.m */; };
 		EBCF575417546C030083837B /* NUIConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCF56EF17546C030083837B /* NUIConverter.m */; };
 		EBCF575517546C030083837B /* NUIFileMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCF56F117546C030083837B /* NUIFileMonitor.m */; };
@@ -82,8 +79,13 @@
 		EBCF579517546CBE0083837B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCF579417546CBE0083837B /* CoreImage.framework */; };
 		EBCF579A17546D710083837B /* cursos_2009.xml in Resources */ = {isa = PBXBuildFile; fileRef = EBCF579817546D710083837B /* cursos_2009.xml */; };
 		EBCF579B17546D710083837B /* medias_2009.xml in Resources */ = {isa = PBXBuildFile; fileRef = EBCF579917546D710083837B /* medias_2009.xml */; };
-		EBCF579E1754716A0083837B /* ArgumentoViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCF579D175471690083837B /* ArgumentoViewController~iphone.xib */; };
 		EBCF579F175471D50083837B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCF56E717546BB00083837B /* main.m */; };
+		EBCF57A317547B0E0083837B /* GradesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCF57A117547B0E0083837B /* GradesViewController.m */; };
+		EBCF57A717547CFE0083837B /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCF57A617547CFE0083837B /* DataController.m */; };
+		EBCF57AC175489800083837B /* CoursesViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCF57A81754897F0083837B /* CoursesViewController~ipad.xib */; };
+		EBCF57AD175489800083837B /* CoursesViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCF57A91754897F0083837B /* CoursesViewController~iphone.xib */; };
+		EBCF57AE175489800083837B /* GradesViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCF57AA1754897F0083837B /* GradesViewController~ipad.xib */; };
+		EBCF57AF175489800083837B /* GradesViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCF57AB1754897F0083837B /* GradesViewController~iphone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,16 +95,13 @@
 		1D6058910D05DD3D006BFB54 /* Argumento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Argumento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28D7ACF60DDB3853001CB0EB /* ArgumentoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArgumentoViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* ArgumentoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArgumentoViewController.m; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
 		EB7CA1F91387F40B008396E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EBCF56D717546B770083837B /* cursos_2007.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = cursos_2007.xml; path = Resources/cursos_2007.xml; sourceTree = "<group>"; };
 		EBCF56D817546B770083837B /* cursos_2008.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = cursos_2008.xml; path = Resources/cursos_2008.xml; sourceTree = "<group>"; };
 		EBCF56D917546B770083837B /* medias_2007.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = medias_2007.xml; path = Resources/medias_2007.xml; sourceTree = "<group>"; };
 		EBCF56DA17546B770083837B /* medias_2008.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = medias_2008.xml; path = Resources/medias_2008.xml; sourceTree = "<group>"; };
-		EBCF56E017546B930083837B /* ArgumentoViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "ArgumentoViewController~ipad.xib"; path = "Resources/ArgumentoViewController~ipad.xib"; sourceTree = SOURCE_ROOT; };
-		EBCF56E117546B930083837B /* iPadWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iPadWindow.xib; path = Resources/iPadWindow.xib; sourceTree = SOURCE_ROOT; };
-		EBCF56E217546B930083837B /* iPhoneWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iPhoneWindow.xib; path = Resources/iPhoneWindow.xib; sourceTree = SOURCE_ROOT; };
 		EBCF56E617546BB00083837B /* Argumento_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Argumento_Prefix.pch; path = Resources/Argumento_Prefix.pch; sourceTree = "<group>"; };
 		EBCF56E717546BB00083837B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Resources/main.m; sourceTree = "<group>"; };
 		EBCF56E817546BB00083837B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Resources/Settings.bundle; sourceTree = "<group>"; };
@@ -214,7 +213,14 @@
 		EBCF579417546CBE0083837B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		EBCF579817546D710083837B /* cursos_2009.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = cursos_2009.xml; path = Resources/cursos_2009.xml; sourceTree = "<group>"; };
 		EBCF579917546D710083837B /* medias_2009.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = medias_2009.xml; path = Resources/medias_2009.xml; sourceTree = "<group>"; };
-		EBCF579D175471690083837B /* ArgumentoViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "ArgumentoViewController~iphone.xib"; path = "Resources/ArgumentoViewController~iphone.xib"; sourceTree = SOURCE_ROOT; };
+		EBCF57A017547B0E0083837B /* GradesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradesViewController.h; sourceTree = "<group>"; };
+		EBCF57A117547B0E0083837B /* GradesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradesViewController.m; sourceTree = "<group>"; };
+		EBCF57A517547CFE0083837B /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		EBCF57A617547CFE0083837B /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+		EBCF57A81754897F0083837B /* CoursesViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CoursesViewController~ipad.xib"; sourceTree = "<group>"; };
+		EBCF57A91754897F0083837B /* CoursesViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CoursesViewController~iphone.xib"; sourceTree = "<group>"; };
+		EBCF57AA1754897F0083837B /* GradesViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "GradesViewController~ipad.xib"; sourceTree = "<group>"; };
+		EBCF57AB1754897F0083837B /* GradesViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "GradesViewController~iphone.xib"; sourceTree = "<group>"; };
 		EBD392EB1220C26A00E07826 /* Constantes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constantes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -240,12 +246,16 @@
 				EBD392EB1220C26A00E07826 /* Constantes.h */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* ArgumentoViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* ArgumentoViewController.m */,
-				EBCF579D175471690083837B /* ArgumentoViewController~iphone.xib */,
-				EBCF56E017546B930083837B /* ArgumentoViewController~ipad.xib */,
-				EBCF56E217546B930083837B /* iPhoneWindow.xib */,
-				EBCF56E117546B930083837B /* iPadWindow.xib */,
+				28D7ACF60DDB3853001CB0EB /* CoursesViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* CoursesViewController.m */,
+				EBCF57A81754897F0083837B /* CoursesViewController~ipad.xib */,
+				EBCF57A91754897F0083837B /* CoursesViewController~iphone.xib */,
+				EBCF57A517547CFE0083837B /* DataController.h */,
+				EBCF57A617547CFE0083837B /* DataController.m */,
+				EBCF57A017547B0E0083837B /* GradesViewController.h */,
+				EBCF57A117547B0E0083837B /* GradesViewController.m */,
+				EBCF57AA1754897F0083837B /* GradesViewController~ipad.xib */,
+				EBCF57AB1754897F0083837B /* GradesViewController~iphone.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -548,9 +558,6 @@
 				EBCF56DC17546B770083837B /* cursos_2008.xml in Resources */,
 				EBCF56DD17546B770083837B /* medias_2007.xml in Resources */,
 				EBCF56DE17546B770083837B /* medias_2008.xml in Resources */,
-				EBCF56E317546B930083837B /* ArgumentoViewController~ipad.xib in Resources */,
-				EBCF56E417546B930083837B /* iPadWindow.xib in Resources */,
-				EBCF56E517546B930083837B /* iPhoneWindow.xib in Resources */,
 				EBCF576E17546C030083837B /* NUIStyle.nss in Resources */,
 				EBCF576F17546C030083837B /* NUIViewBackground.png in Resources */,
 				EBCF577017546C030083837B /* Blue.NUI.nss in Resources */,
@@ -567,7 +574,10 @@
 				EBCF579317546C680083837B /* icon@114.png in Resources */,
 				EBCF579A17546D710083837B /* cursos_2009.xml in Resources */,
 				EBCF579B17546D710083837B /* medias_2009.xml in Resources */,
-				EBCF579E1754716A0083837B /* ArgumentoViewController~iphone.xib in Resources */,
+				EBCF57AC175489800083837B /* CoursesViewController~ipad.xib in Resources */,
+				EBCF57AD175489800083837B /* CoursesViewController~iphone.xib in Resources */,
+				EBCF57AE175489800083837B /* GradesViewController~ipad.xib in Resources */,
+				EBCF57AF175489800083837B /* GradesViewController~iphone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +590,7 @@
 			files = (
 				EBCF579F175471D50083837B /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* ArgumentoViewController.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* CoursesViewController.m in Sources */,
 				EBCF575317546C030083837B /* NUIAppearance.m in Sources */,
 				EBCF575417546C030083837B /* NUIConverter.m in Sources */,
 				EBCF575517546C030083837B /* NUIFileMonitor.m in Sources */,
@@ -626,6 +636,8 @@
 				EBCF578617546C030083837B /* UIToolbar+NUI.m in Sources */,
 				EBCF578717546C030083837B /* UIView+NUI.m in Sources */,
 				EBCF578817546C030083837B /* UIWindow+NUI.m in Sources */,
+				EBCF57A317547B0E0083837B /* GradesViewController.m in Sources */,
+				EBCF57A717547CFE0083837B /* DataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

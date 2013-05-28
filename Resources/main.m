@@ -13,7 +13,7 @@
 int main(int argc, char *argv[]) {
     
     @autoreleasepool {
-        [NUISettings initWithStylesheet:@"Default.NUI"];
+        [NUISettings initWithStylesheet:@"SkyBlue.NUI"];
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
