@@ -49,11 +49,6 @@
 	// Release any cached data, images, etc that aren't in use.
 }
 
-- (void)viewDidUnload {
-    // Não posso tratar os objetos como nulos pois ainda os usarei mesmo quando umas das views estiver invisível
-}
-
-
 - (void)dealloc {
     [self.cursos release];
     [self.argumentos release];
@@ -65,7 +60,7 @@
 
 #pragma mark - User Methods
 
-- (IBAction) proximaPagina {
+- (IBAction)proximaPagina {
 	[primeiraTela removeFromSuperview];
 	[self.view insertSubview:segundaTela atIndex:0];
 	
@@ -81,7 +76,7 @@
     self.telaSelecionada = 2;
 }
 
-- (IBAction) retornar {
+- (IBAction)retornar {
 	[segundaTela removeFromSuperview];
 	[self.view insertSubview:primeiraTela atIndex:0];
     
@@ -97,7 +92,7 @@
     self.telaSelecionada = 1;
 }
 
-- (IBAction) serieSelecionada {
+- (IBAction)serieSelecionada {
     // Modifica a GUI de acordo com a série selecionada pelo usuário
     
 	NSInteger s = [serie selectedSegmentIndex];
@@ -135,11 +130,9 @@
 		provaTerceiraSerie.hidden = YES;
 		linguaTerceiraSerie.hidden = YES;
 	}
-
-
 }
 
-- (IBAction) iniciarCalculoArgumento {
+- (IBAction)iniciarCalculoArgumento {
 	
 	double proporcao = 0.12;	// Proporção lingua estrangeira / total
 	double base = 10.0;			// Base para cálculo argumento
@@ -352,7 +345,7 @@
 	
 }
 
-- (IBAction) infoSobre {
+- (IBAction)infoSobre {
 	
 	UIAlertView *alert = [[UIAlertView alloc] 
 						  initWithTitle:@"Sobre" 
@@ -365,7 +358,7 @@
 	
 }
 
-- (IBAction) infoCurso {
+- (IBAction)infoCurso {
 	
 	UIAlertView *alert = [[UIAlertView alloc] 
 						  initWithTitle:@"Informações" 
@@ -378,7 +371,7 @@
 	
 }
 
-- (IBAction) infoSerie {
+- (IBAction)infoSerie {
 	
 	UIAlertView *alert = [[UIAlertView alloc] 
 						  initWithTitle:@"Informações" 
@@ -391,7 +384,7 @@
 	
 }
 
-- (IBAction) infoNotas {
+- (IBAction)infoNotas {
 	
 	UIAlertView *alert = [[UIAlertView alloc] 
 						  initWithTitle:@"Informações" 
@@ -404,7 +397,7 @@
 	
 }
 
-- (IBAction) infoNotasiPad {
+- (IBAction)infoNotasiPad {
 	
 	UIAlertView *alert = [[UIAlertView alloc] 
 						  initWithTitle:@"Informações" 
@@ -417,7 +410,7 @@
 	
 }
 
-- (IBAction) infoResultado {
+- (IBAction)infoResultado {
 	
 	UIAlertView *alert = [[UIAlertView alloc] 
 						  initWithTitle:@"Tendência" 
@@ -430,11 +423,11 @@
 	
 }
 
-- (IBAction) textFieldDoneEditing: (id) sender {
+- (IBAction)textFieldDoneEditing:(id)sender {
 	[sender resignFirstResponder];
 }
 
-- (void) atualizarDados {
+- (void)atualizarDados {
     // Inicia o bundle
 	NSBundle * bundle = [NSBundle mainBundle];
     
@@ -444,26 +437,19 @@
     NSInteger ano = [[defaults objectForKey:@"ano"] intValue];
     
     // Caso ocorra algum erro (0 == NULL), nós definimos ano com um valor default
-    if (ano == 0) {
-        ano = 2007;
-    }
+    if (ano == 0) ano = 2007;
     
     // Carrega os argumentos dos cursos a partir do xml
 	NSString * plistPath = [bundle pathForResource:[NSString stringWithFormat:@"cursos_%d", ano] ofType:@"xml"];
-	NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
-	self.dicionarioCursos = dictionary;
-	[dictionary release];
+	self.dicionarioCursos = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
 	
     // Obtém as chaves do dicionário de cursos, o que representa o nome dos cursos
 	NSArray *components = [self.dicionarioCursos allKeys];
-	NSArray *sorted = [components sortedArrayUsingSelector:@selector(compare:)];
-	self.cursos = sorted;
+    self.cursos = [components sortedArrayUsingSelector:@selector(compare:)];
     
     // Carrega as médias a partir do xml
 	NSString * plistPath2 = [bundle pathForResource:[NSString stringWithFormat:@"medias_%d", ano] ofType:@"xml"];
-	NSDictionary * dictionary2 = [[NSDictionary alloc] initWithContentsOfFile:plistPath2];
-	self.dicionarioMedias = dictionary2;
-	[dictionary2 release];
+	self.dicionarioMedias = [[NSDictionary alloc] initWithContentsOfFile:plistPath2];
     
     // Atualiza todos os componentes do picker
     [picker reloadAllComponents];
@@ -478,13 +464,13 @@
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-	return [cursos count];
+	return [self.cursos count];
 }
 
 #pragma mark - Picker Delegate Methods
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-	return [cursos objectAtIndex:row];
+	return [self.cursos objectAtIndex:row];
 }
 
 
@@ -495,7 +481,7 @@
 	NSArray * array = [self.dicionarioCursos objectForKey:selectedCurso];
     self.argumentos = array;
 	
-    if (telaSelecionada == 1) {
+    if (self.telaSelecionada == 1) {
         // Escreve os valores dos argumentos e relação candidato/vaga na tela
         argumentoMinimoCurso.text = [self.formatter stringFromNumber:[self.argumentos objectAtIndex:0]];
         argumentoMaximoCurso.text = [self.formatter stringFromNumber:[self.argumentos objectAtIndex:1]];

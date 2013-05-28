@@ -644,7 +644,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Resources/Argumento_Prefix.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Argumento-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = Argumento;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -661,7 +661,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Resources/Argumento_Prefix.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Argumento-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = Argumento;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;

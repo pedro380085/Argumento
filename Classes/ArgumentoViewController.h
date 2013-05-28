@@ -11,57 +11,49 @@
 
 @interface ArgumentoViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
 
-	IBOutlet UIView * primeiraTela;
-	IBOutlet UIView * segundaTela;
+	IBOutlet UIView *primeiraTela;
+	IBOutlet UIView *segundaTela;
 	
-	IBOutlet UIPickerView * picker;
+	IBOutlet UIPickerView *picker;
 	
-	IBOutlet UILabel * argumentoMinimoCurso;
-	IBOutlet UILabel * argumentoMaximoCurso;
-	IBOutlet UILabel * candidatoVaga;
-	IBOutlet UILabel * argumentoMinimoFinal;
-	IBOutlet UILabel * argumentoMaximoFinal;
+	IBOutlet UILabel *argumentoMinimoCurso;
+	IBOutlet UILabel *argumentoMaximoCurso;
+	IBOutlet UILabel *candidatoVaga;
+	IBOutlet UILabel *argumentoMinimoFinal;
+	IBOutlet UILabel *argumentoMaximoFinal;
 	
-	IBOutlet UILabel * labelPrimeiraSerie;
-	IBOutlet UILabel * labelSegundaSerie;
-	IBOutlet UILabel * labelTerceiraSerie;
-	IBOutlet UITextField * provaPrimeiraSerie;
-	IBOutlet UITextField * provaSegundaSerie;
-	IBOutlet UITextField * provaTerceiraSerie;
-	IBOutlet UISegmentedControl * linguaPrimeiraSerie;
-	IBOutlet UISegmentedControl * linguaSegundaSerie;
-	IBOutlet UISegmentedControl * linguaTerceiraSerie;
+	IBOutlet UILabel *labelPrimeiraSerie;
+	IBOutlet UILabel *labelSegundaSerie;
+	IBOutlet UILabel *labelTerceiraSerie;
+	IBOutlet UITextField *provaPrimeiraSerie;
+	IBOutlet UITextField *provaSegundaSerie;
+	IBOutlet UITextField *provaTerceiraSerie;
+	IBOutlet UISegmentedControl *linguaPrimeiraSerie;
+	IBOutlet UISegmentedControl *linguaSegundaSerie;
+	IBOutlet UISegmentedControl *linguaTerceiraSerie;
 	
-	IBOutlet UISegmentedControl * serie;
-	
-	NSArray * cursos;
-    NSArray * argumentos;
-	
-	NSDictionary * dicionarioCursos;
-	NSDictionary * dicionarioMedias;
-    
-    NSInteger telaSelecionada;
+	IBOutlet UISegmentedControl *serie;
 }
 
-@property (nonatomic, retain) NSArray *cursos;
-@property (nonatomic, retain) NSArray *argumentos;
-@property (nonatomic, retain) NSDictionary *dicionarioCursos;
-@property (nonatomic, retain) NSDictionary *dicionarioMedias;
-@property (nonatomic, retain) NSNumberFormatter *formatter;
+@property (nonatomic, strong) NSArray *cursos;
+@property (nonatomic, strong) NSArray *argumentos;
+@property (nonatomic, strong) NSDictionary *dicionarioCursos;
+@property (nonatomic, strong) NSDictionary *dicionarioMedias;
+@property (nonatomic, strong) NSNumberFormatter *formatter;
 @property (nonatomic, assign) NSInteger telaSelecionada;
 
-- (IBAction) proximaPagina;
-- (IBAction) retornar;
-- (IBAction) serieSelecionada;
-- (IBAction) iniciarCalculoArgumento;
-- (IBAction) infoSobre;
-- (IBAction) infoCurso;
-- (IBAction) infoSerie;
-- (IBAction) infoNotas;
-- (IBAction) infoNotasiPad;
-- (IBAction) infoResultado;
-- (IBAction) textFieldDoneEditing: (id) sender;
-- (void) atualizarDados;
+- (IBAction)proximaPagina;
+- (IBAction)retornar;
+- (IBAction)serieSelecionada;
+- (IBAction)iniciarCalculoArgumento;
+- (IBAction)infoSobre;
+- (IBAction)infoCurso;
+- (IBAction)infoSerie;
+- (IBAction)infoNotas;
+- (IBAction)infoNotasiPad;
+- (IBAction)infoResultado;
+- (IBAction)textFieldDoneEditing:(id)sender;
+- (void)atualizarDados;
 
 
 @end
