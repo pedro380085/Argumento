@@ -41,8 +41,6 @@
 	NSDictionary * dicionarioMedias;
     
     NSInteger telaSelecionada;
-	
-	
 }
 
 @property (nonatomic, retain) NSArray * cursos;
