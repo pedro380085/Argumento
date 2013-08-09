@@ -67,7 +67,7 @@
 	
 	UIAlertView *alert = [[UIAlertView alloc] 
 						  initWithTitle:@"Sobre" 
-						  message: @"Este programa SIMULA os resultados do PAS.\n\n © Estúdio Trilha\n\nVersão atual: 1.5\nRelease: Maio/2013\n"
+						  message: @"Este programa SIMULA os resultados do PAS. Visto que o CESPE não publica mais seus boletins informativos, essa é a última versão do Argumento.\n\n © Estúdio Trilha\n\nVersão atual: 1.5\nRelease: Agosto/2013\n"
 						  delegate:self 
 						  cancelButtonTitle:@"Ok" 
 						  otherButtonTitles:nil];
@@ -100,9 +100,9 @@
     [picker reloadData];
     
     // Seleciona a primeira linha do picker (para os argumentos iniciais não serem vazios aos olhos do usuário)
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-	[picker selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionTop];
-    [[picker cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_selectedIndex inSection:0];
+    [picker selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionTop];
+	[self tableView:picker didSelectRowAtIndexPath:indexPath];
 }
 
 - (void)proximoControlador {

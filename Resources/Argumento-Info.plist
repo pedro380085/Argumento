@@ -9,11 +9,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>icon57.png</string>
+	<string>icon@57.png</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>icon57.png</string>
-		<string>icon58.png</string>
 		<string>icon@57.png</string>
 		<string>icon@72.png</string>
 		<string>icon@144.png</string>
@@ -25,8 +23,6 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>icon57.png</string>
-				<string>icon58.png</string>
 				<string>icon@57.png</string>
 				<string>icon@72.png</string>
 				<string>icon@144.png</string>

@@ -13,6 +13,7 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28D7ACF80DDB3853001CB0EB /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* CoursesViewController.m */; };
 		EB7CA1FA1387F40B008396E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7CA1F91387F40B008396E3 /* QuartzCore.framework */; };
+		EBA81D3C17B5817E0085A6AC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBA81D3B17B5817E0085A6AC /* Settings.bundle */; };
 		EBCF56DB17546B770083837B /* cursos_2007.xml in Resources */ = {isa = PBXBuildFile; fileRef = EBCF56D717546B770083837B /* cursos_2007.xml */; };
 		EBCF56DC17546B770083837B /* cursos_2008.xml in Resources */ = {isa = PBXBuildFile; fileRef = EBCF56D817546B770083837B /* cursos_2008.xml */; };
 		EBCF56DD17546B770083837B /* medias_2007.xml in Resources */ = {isa = PBXBuildFile; fileRef = EBCF56D917546B770083837B /* medias_2007.xml */; };
@@ -100,13 +101,13 @@
 		28D7ACF60DDB3853001CB0EB /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
 		EB7CA1F91387F40B008396E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EBA81D3B17B5817E0085A6AC /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Resources/Settings.bundle; sourceTree = "<group>"; };
 		EBCF56D717546B770083837B /* cursos_2007.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = cursos_2007.xml; path = Resources/cursos_2007.xml; sourceTree = "<group>"; };
 		EBCF56D817546B770083837B /* cursos_2008.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = cursos_2008.xml; path = Resources/cursos_2008.xml; sourceTree = "<group>"; };
 		EBCF56D917546B770083837B /* medias_2007.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = medias_2007.xml; path = Resources/medias_2007.xml; sourceTree = "<group>"; };
 		EBCF56DA17546B770083837B /* medias_2008.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = medias_2008.xml; path = Resources/medias_2008.xml; sourceTree = "<group>"; };
 		EBCF56E617546BB00083837B /* Argumento_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Argumento_Prefix.pch; path = Resources/Argumento_Prefix.pch; sourceTree = "<group>"; };
 		EBCF56E717546BB00083837B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Resources/main.m; sourceTree = "<group>"; };
-		EBCF56E817546BB00083837B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Resources/Settings.bundle; sourceTree = "<group>"; };
 		EBCF56E917546BB00083837B /* Argumento-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Argumento-Info.plist"; path = "Resources/Argumento-Info.plist"; sourceTree = "<group>"; };
 		EBCF578A17546C420083837B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EBCF578C17546C520083837B /* icon@57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@57.png"; sourceTree = "<group>"; };
@@ -297,8 +298,8 @@
 			children = (
 				EBCF56E617546BB00083837B /* Argumento_Prefix.pch */,
 				EBCF56E717546BB00083837B /* main.m */,
-				EBCF56E817546BB00083837B /* Settings.bundle */,
 				EBCF56E917546BB00083837B /* Argumento-Info.plist */,
+				EBA81D3B17B5817E0085A6AC /* Settings.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -587,6 +588,7 @@
 				EBDA857F17B4EAD000CF9138 /* Route.NUI.nss in Resources */,
 				EBDA858017B4EAD000CF9138 /* SkyBlue.NUI.nss in Resources */,
 				EBDA858117B4EAD000CF9138 /* Switchboard.NUI.nss in Resources */,
+				EBA81D3C17B5817E0085A6AC /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,7 +662,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PEDRO P M GOES";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -679,7 +681,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PEDRO P M GOES";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Resources/Argumento_Prefix.pch;
@@ -696,7 +698,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PEDRO P M GOES";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -714,7 +716,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PEDRO P M GOES";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

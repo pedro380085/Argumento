@@ -41,6 +41,9 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Iniciar cálculo!" style:UIBarButtonItemStylePlain target:self action:@selector(iniciarCalculoArgumento)];
     [NUIRenderer renderBarButtonItem:self.navigationItem.rightBarButtonItem];
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+    
     // Inicia o formatter (para formatar os números)
     self.formatter = [[NSNumberFormatter alloc] init];
 	[self.formatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
@@ -150,6 +153,13 @@
     [UIView animateWithDuration:0.2 animations:^{
         self.view.frame = rect;
     }];
+}
+
+- (void)dismissKeyboard {
+    // Resign the keyboard for all the fields
+    [provaPrimeiraSerie resignFirstResponder];
+    [provaSegundaSerie resignFirstResponder];
+    [provaTerceiraSerie resignFirstResponder];
 }
 
 #pragma mark - User Methods
