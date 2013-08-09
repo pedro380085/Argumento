@@ -12,6 +12,12 @@
 #import "DataController.h"
 #import "GradesViewController.h"
 
+@interface CoursesViewController ()
+
+@property NSInteger selectedIndex;
+
+@end
+
 @implementation CoursesViewController
 
 #pragma mark - Cycle
@@ -91,9 +97,12 @@
     [[DataController sharedInstance] atualizarDados];
     
     // Atualiza todos os componentes do picker
-    [picker reloadAllComponents];
+    [picker reloadData];
+    
     // Seleciona a primeira linha do picker (para os argumentos iniciais não serem vazios aos olhos do usuário)
-	[picker.delegate pickerView:picker didSelectRow:0 inComponent:0];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+	[picker selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionTop];
+    [[picker cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark];
 }
 
 - (void)proximoControlador {
@@ -105,29 +114,52 @@
 
 #pragma mark - Picker Data Source Methods
 
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-	return 1;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)aTableView {
+    return 1;
 }
 
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-	return [[[DataController sharedInstance] cursos] count];
+- (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section {
+    return [[[DataController sharedInstance] cursos] count];
 }
 
 #pragma mark - Picker Delegate Methods
 
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-	return [[[DataController sharedInstance] cursos] objectAtIndex:row];
+- (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *identifier = @"CustomCellIdentifier";
+    UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:identifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    
+    cell.textLabel.text = [[[DataController sharedInstance] cursos] objectAtIndex:indexPath.row];
+    
+    UITableViewCellAccessoryType *type = (_selectedIndex == indexPath.row) ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+    [cell setAccessoryType:type];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Marca a célula como não selecionada
+    [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryNone];
 }
 
 
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-	
-    [[DataController sharedInstance] selecionaCurso:row];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // Marca a célula como selecionada
+    [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark];
+    
+    // Informa o singleton sobre o curso selecionado
+    [[DataController sharedInstance] selecionaCurso:indexPath.row];
 	
     // Escreve os valores dos argumentos e relação candidato/vaga na tela
     argumentoMinimoCurso.text = [self.formatter stringFromNumber:[[[DataController sharedInstance] argumentos] objectAtIndex:0]];
     argumentoMaximoCurso.text = [self.formatter stringFromNumber:[[[DataController sharedInstance] argumentos] objectAtIndex:1]];
     candidatoVaga.text = [self.formatter stringFromNumber:[[[DataController sharedInstance] argumentos] objectAtIndex:2]];
 }
+
 
 @end

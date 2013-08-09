@@ -31,6 +31,5 @@
 - (IBAction)infoNotas;
 - (IBAction)infoNotasiPad;
 - (IBAction)infoResultado;
-- (IBAction)textFieldDoneEditing:(id)sender;
 
 @end

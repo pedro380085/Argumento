@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface CoursesViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
+@interface CoursesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
 
-	IBOutlet UIPickerView *picker;
+	IBOutlet UITableView *picker;
 	
 	IBOutlet UILabel *argumentoMinimoCurso;
 	IBOutlet UILabel *argumentoMaximoCurso;
